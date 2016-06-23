@@ -1,4 +1,12 @@
 body {
 	background: asset-url('003.jpg') no-repeat;
+	background-size: 1024px;
+}
+
+@media screen and (min-width: 768px) {
+
+body {
 	background-size: cover;
+}
+
 }
