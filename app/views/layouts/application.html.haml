@@ -1,0 +1,44 @@
+!!! 5
+%html
+	%head
+		%title
+			km7
+		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false
+		= javascript_include_tag 'application', 'data-turbolinks-track' => false
+		= favicon_link_tag 'favicon.ico'
+		%meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+		= display_meta_tags :site => 'galeriakm7.com' 
+		= csrf_meta_tags
+	%body{ data: {no_turbolink: true} }
+		.container-wide
+			#header
+				#user-menu
+				#logo-row
+					.logo
+						= image_tag("logo.jpg")
+				#main-menu
+				%ul
+					%li
+						%a{href: '#'} about us
+					%li
+						%a{href: '#'} visit
+					%li
+						%a{href: '#'} email
+
+			- if flash[:notice]
+				.alert.alert-success
+					%button{type:"button",class:"close",data:{dismiss:"alert"}}
+						&times;
+					= flash[:notice]
+			- elsif flash[:error]
+				.alert.alert-danger
+					%button{type:"button",class:"close",data:{dismiss:"alert"}}
+						&times;
+					= flash[:error]
+			- elsif flash[:alert]
+				.alert.alert-warning
+					%button{type:"button",class:"close",data:{dismiss:"alert"}}
+						&times;
+					= flash[:warning]
+
+			= yield

@@ -19,9 +19,6 @@
 
 /* General Styles */
 
-@font-face {
-}
-
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
@@ -57,4 +54,9 @@ body {
    display: block;
    height: 0;
    clear: both;
+}
+
+.logo {
+	width: 120px;
+	margin-left: 69px;
 }
