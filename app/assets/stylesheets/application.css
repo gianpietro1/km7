@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* General Styles */
+
+@font-face {
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+	  padding-bottom: 20px;
+    overflow-x: hidden; 
+}
+
+.clear {
+	clear:both;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+body {
+ /*  font-family: 'Roboto', 'Helvetica';*/
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
