@@ -21,4 +21,8 @@ $(document).ready(function(){
   	$('.info').slideToggle();
 	});
 
+  $("#artists").click(function() {
+  	$('.artists').slideToggle();
+	});
+
 });

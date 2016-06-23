@@ -18,9 +18,9 @@
 				#main-menu.pull-left
 					%ul
 						%li
-							%a{href: 'javascript:;', id:'contact'} contact
-						%li.hide
-							%a{href: '#'} visit
+							%a{href: 'javascript:;', id:'contact'} contato
+						%li
+							%a{href: 'javascript:;', id:'artists'} artistas
 						%li.hide
 							%a{href: '#'} email
 					.info
@@ -39,6 +39,8 @@
 						%a{href:'mailto:marcelo.brantes@yahoo.com'}
 							%i.fa.fa-envelope{"aria-hidden":"true"}
 							email
+					.artists
+						Coming soon
 			- if flash[:notice]
 				.alert.alert-success
 					%button{type:"button",class:"close",data:{dismiss:"alert"}}

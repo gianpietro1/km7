@@ -63,7 +63,7 @@ body {
 }
 
 #logo-row {
-	width: 10%;
+	width: 15%;
 }
 
 .logo {
@@ -74,7 +74,7 @@ body {
 }
 
 #main-menu {
-	width: 90%;
+	width: 85%;
 }
 
 #main-menu ul {
@@ -87,6 +87,8 @@ body {
 
 #main-menu li {
 	list-style: none;
+	display: inline-block;
+	padding-right: 20px;
 }
 
 #main-menu li a {
@@ -98,7 +100,7 @@ body {
 	border-bottom: 2px solid white;
 }
 
-.info {
+.info, .artists {
 	background-color: rgba(0,0,0,0.2);
 	height: auto;
 	color: white;
@@ -113,4 +115,16 @@ body {
 
 .info a:hover {
 	border-bottom: 2px solid white;
+}
+
+@media screen and (min-width: 768px) {
+
+#logo-row {
+	width: 10%;
+}
+
+#main-menu {
+	width: 90%;
+}
+
 }
