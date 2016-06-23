@@ -12,21 +12,33 @@
 	%body{ data: {no_turbolink: true} }
 		.container-wide
 			#header
-				#user-menu
-				#logo-row
-					.logo.pull-left
+				#logo-row.pull-left
+					.logo
 						= image_tag("logo.jpg")
-					.logo-text.pull-left
-						COMING SOON
-				#main-menu
-				%ul.hide
-					%li
-						%a{href: '#'} about us
-					%li
-						%a{href: '#'} visit
-					%li
-						%a{href: '#'} email
-
+				#main-menu.pull-left
+					%ul
+						%li
+							%a{href: 'javascript:;', id:'contact'} contact
+						%li.hide
+							%a{href: '#'} visit
+						%li.hide
+							%a{href: '#'} email
+					.info
+						Galeria KM7
+						%br
+						Rua Margarida Brantes, 265
+						%br
+						Venda das Pedras, Nova Friburgo, RJ
+						%br
+						CEP 28630650
+						%br
+						55 22 3016 1944
+						%br
+						55 21 9913 9829
+						%br
+						%a{href:'mailto:marcelo.brantes@yahoo.com'}
+							%i.fa.fa-envelope{"aria-hidden":"true"}
+							email
 			- if flash[:notice]
 				.alert.alert-success
 					%button{type:"button",class:"close",data:{dismiss:"alert"}}

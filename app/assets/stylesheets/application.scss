@@ -16,6 +16,8 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 /* General Styles */
 
@@ -56,11 +58,60 @@ body {
    clear: both;
 }
 
+#header {
+	width: 100%;
+}
+
+#logo-row {
+	width: 10%;
+}
+
 .logo {
-	width: 120px;
-	margin-left: 69px;
 }
 
 .logo img {
-	width: 118px;
+	width: 100%;
+}
+
+#main-menu {
+	width: 90%;
+}
+
+#main-menu ul {
+	background-color: rgba(0,0,0,0.5);
+	padding-left: 10px;
+	padding-top: 5px;
+	height: 35px;
+	margin-bottom: 0;
+}
+
+#main-menu li {
+	list-style: none;
+}
+
+#main-menu li a {
+	color: white;
+	text-decoration: none
+}
+
+#main-menu li a:hover {
+	border-bottom: 2px solid white;
+}
+
+.info {
+	background-color: rgba(0,0,0,0.2);
+	height: 234px;
+	color: white;
+	padding: 10px;
+	display: none;
+}
+
+.info a {
+	text-decoration: none;
+	color: white;
+}
+
+.info a:hover {
+	border-bottom: 2px solid white;
+
 }
